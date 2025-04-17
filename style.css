@@ -5,15 +5,20 @@
 }
 
 body {
-  background-color: #fff;
-  color: #111;
+  background: url('imagens/background.jpg') no-repeat center center/cover;
+  height: 100vh;
   font-family: 'Arial', sans-serif;
+  color: #111;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   text-align: center;
-  flex-direction: column;
+}
+
+.overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 15px;
 }
 
 main {
