@@ -1,51 +1,53 @@
-/* Exemplo de estilo simples */
-body {
-  font-family: Arial, sans-serif;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
+body {
+  background-color: #fff;
+  color: #111;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
+  flex-direction: column;
 }
 
-header img {
-  width: 100px;
+main {
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-header h1 {
-  margin: 10px 0;
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-header p {
-  font-size: 14px;
+p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
 }
 
-.content {
-  padding: 20px;
-  text-align: center;
-}
-
-.content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.content ul li {
-  margin: 10px 0;
-}
-
-.content ul li a {
+.links a {
+  display: block;
+  font-size: 1.2rem;
+  color: #000;
   text-decoration: none;
-  color: #333;
+  margin: 10px 0;
+  transition: color 0.3s ease, transform 0.2s ease;
 }
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
+.links a:hover {
+  color: #007bff;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
